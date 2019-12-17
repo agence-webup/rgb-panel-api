@@ -8,6 +8,9 @@ It was built with [Node.js](https://nodejs.org) and [Express.js](https://express
 
 ## Installation instructions
 
+### Requirements
+- Node.js & npm
+
 ### Clone the repo
 ```
 git clone git@github.com:agence-webup/rgb-panel-api.git
