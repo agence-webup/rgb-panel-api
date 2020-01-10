@@ -12,18 +12,18 @@ It was built with [Node.js](https://nodejs.org) and [Express.js](https://express
 - Node.js & npm
 
 ### Clone the repo
-```
+```bash
 git clone git@github.com:agence-webup/rgb-panel-api.git
 ```
 
 ### Install dependencies
-```
+```bash
 npm install
 ```
 
 ### Configure AMQP endpoint
 First, copy `config/values.sample.js` to `config/values.js`
-```
+```bash
 cp config/values.sample.js config/values.js
 ```
 Edit `values.js` and specify your AMQP endpoint.
@@ -32,6 +32,6 @@ Edit `values.js` and specify your AMQP endpoint.
 Please note this project was made with RabbitMQ in mind. It might work on another type of AMQP endpoint as well, but we haven't tested this.
 
 ### Run
-```
+```bash
 node app.js
 ```
