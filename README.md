@@ -40,7 +40,7 @@ With Express
 node app.js
 ```
 
-With [now]("https://zeit.co/download")
+With [now](https://zeit.co/download)
 ```bash
 now dev
 ```
