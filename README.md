@@ -6,7 +6,7 @@ Requests are validated and sent to a [RabbitMQ](https://rabbitmq.com) queue for 
 
 It was built with [Node.js](https://nodejs.org) and [Express.js](https://expressjs.org).
 
-It can also be deployed to [ZEIT](https://zeit.co) as Serverless Functions. If you choose to deploy to ZEIT, the API won't use Express, but rather the TypeScript files in the `api/` folder and the `now.json` file at the root of the project.
+It can also be deployed to [ZEIT](https://zeit.co) as Serverless Functions. If you choose to deploy to ZEIT, the API won't use Express, but rather the TypeScript file in the `api` folder and the `now.json` file at the root of the project.
 
 ## Installation instructions
 
