@@ -1,17 +1,35 @@
 {
-    "headers": [
+    "routes": [
+        { 
+            "src": "/", 
+            "status": 404, 
+            "dest": "/404" 
+        },
+        { 
+            "src": "/schema(.*)", 
+            "status": 404, 
+            "dest": "/404" 
+        },
+        { 
+            "src": "/config(.*)", 
+            "status": 404, 
+            "dest": "/404" 
+        },
         {
-            "source": "/(.*)",
-            "headers" : [
-                {
-                    "key" : "Access-Control-Allow-Origin",
-                    "value" : "*"
-                },
-                {
-                    "key" : "Access-Control-Allow-Headers",
-                    "value" : "Origin, X-Requested-With, Content-Type, Accept"
-                }
-            ]
+            "src": "/api/send/drawing",
+            "dest": "/api/send/drawing.ts",
+            "headers": {
+                "Access-Control-Allow-Origin" : "*",
+                "Access-Control-Allow-Headers" : "Origin, X-Requested-With, Content-Type, Accept"
+            }
+        },
+        {
+            "src": "/api/send/message",
+            "dest": "/api/send/text.ts",
+            "headers": {
+                "Access-Control-Allow-Origin" : "*",
+                "Access-Control-Allow-Headers" : "Origin, X-Requested-With, Content-Type, Accept"
+            }
         }
     ]
 }
