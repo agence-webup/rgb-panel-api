@@ -14,22 +14,6 @@
             "src": "/config(.*)", 
             "status": 404, 
             "dest": "/404" 
-        },
-        {
-            "src": "/api/send/drawing",
-            "dest": "/api/send/drawing.ts",
-            "headers": {
-                "Access-Control-Allow-Origin" : "*",
-                "Access-Control-Allow-Headers" : "Origin, X-Requested-With, Content-Type, Accept"
-            }
-        },
-        {
-            "src": "/api/send/message",
-            "dest": "/api/send/text.ts",
-            "headers": {
-                "Access-Control-Allow-Origin" : "*",
-                "Access-Control-Allow-Headers" : "Origin, X-Requested-With, Content-Type, Accept"
-            }
         }
     ]
 }
