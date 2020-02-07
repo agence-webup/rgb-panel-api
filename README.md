@@ -49,3 +49,19 @@ now dev
 ```bash
 now deploy --prod
 ```
+
+### Alternative: Docker
+
+If wish to do so, you can run this API in a Docker container.
+
+To do so, all you need to do is configure the AMQP endpoint and build the image.
+
+```bash
+docker built -t matrixapi .
+```
+
+You can now run the API with Docker while specifying the desired public port.
+
+```bash
+docker run -p 8080:3000 -d matrixapi
+```
