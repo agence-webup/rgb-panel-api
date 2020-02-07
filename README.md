@@ -52,9 +52,9 @@ now deploy --prod
 
 ### Alternative: Docker
 
-If wish to do so, you can run this API in a Docker container.
+As an alternative to running the Express server yourself or deploying to ZEIT, you can run this API in a Docker container.
 
-To do so, all you need to do is configure the AMQP endpoint and build the image.
+To do so, you need to configure the AMQP endpoint and build the image. Dependencies will then be retrieved during the build process.
 
 ```bash
 docker built -t matrixapi .
